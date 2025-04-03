@@ -1,2 +1,2 @@
 # escalla
-Open-source musician scheduling web app
+Open-source musician shift scheduling web app
