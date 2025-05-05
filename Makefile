@@ -1,4 +1,4 @@
-.PHONY: up down restart
+.PHONY: up down restart sail
 
 up:
 	./vendor/bin/sail up -d
@@ -9,3 +9,6 @@ down:
 restart:
 	make down
 	make up
+
+sail:
+	./vendor/bin/sail $(wordlist 2, $(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
